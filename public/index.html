@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tailwind 2.0</title>
+    <link rel="stylesheet" href="css/tailwind.css" />
+    
+    <script src="https://kit.fontawesome.com/7b10031ee5.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-200 antialiased">
+<div class="flex items-center justify-center  m-auto overflow-hidden">
+    <div class=" text-center bg-white rounded-lg shadow-md">
+       <header>
+        <div class="relative p-4">
+            <input type="text" id="search-term" class="p-2 rounded h-10 border border-gray-200 bg-gray-200 focus:bg-white focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:border-transparent" placeholder="search..." />
+           <button id="search" class="bg-gray-200 p-3 h-10 rounded">
+            <svg class="w-4 h-4 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+            </svg>
+           </button>
+        </div>
+       </header>
+       <div class="fav-container bg-purple-100 p-4 ">
+           <h3 class="font-semibold text-lg mb-2">favourite meals</h3>
+           <div >
+            <ul class="flex  w-80 overflow-auto" id="fav-meals">
+           
+            </ul>
+           </div>
+          
+       </div>
+    <div id="meals">
+        
+    </div>  
+
+
+    </div>
+    <div id="meal-popup" class="meal-infoContainer hide  inset-0 fixed flex justify-center items-center">
+         <div id="meal-info" class="meal-info   relative  transform transition-all sm:align-middle sm:max-w-lg" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+           </div>
+    </div>
+</div>
+    <script src="./script.js" defer ></script>
+</body>
+</html>
